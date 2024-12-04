@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dark Background with Multiple Movie Banners</title>
+    <style>
+        /* Set darker background color to #0A3A7E */
+        body {
+            background-color: #0A3A7E;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* Align content to the left */
+        }
+
+        /* Black bar at the top (moderately fat) */
+        .black-bar {
+            background-color: black;
+            height: 80px; /* Moderately fat bar */
+            width: 100%; /* Make the black bar stretch fully */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Smaller logo styling */
+        .logo {
+            height: 90px; /* Adjusted to a smaller size */
+        }
+
+        /* Movie banner button styling */
+        .banner-buttons {
+            display: flex;
+            flex-wrap: wrap; /* Ensures banners are properly stacked when necessary */
+            justify-content: flex-start; /* Align banners to the left */
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .banner-button {
+            width: 120px; /* Smaller width for each banner */
+            text-align: center;
+        }
+
+        .banner-button img {
+            width: 100%; /* Make the image fill the width of the button */
+            height: 180px; /* Set the height for portrait orientation */
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .banner-button img:hover {
+            transform: scale(1.05); /* Slight zoom effect on hover */
+        }
+
+        /* Add space to the left of the first banner */
+        .banner-buttons .first-banner {
+            margin-left: 30px; /* Add space to the left of the first banner */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Black bar at the top with centered logo -->
+    <div class="black-bar">
+        <img class="logo" src="https://i.ibb.co/d6LzpFF/LOGO.png" alt="Logo">
+    </div>
+
+    <!-- Movie Banner Buttons (all in one row) -->
+    <div class="banner-buttons">
+        <!-- First Banner with added space on the left -->
+        <a href="https://www.example1.com" class="banner-button first-banner" target="_blank">
+            <img src="https://lumiere-a.akamaihd.net/v1/images/p_moana2_payoff_5787a994.jpeg" alt="Movie Banner 1">
+        </a>
+        <!-- Second Banner with a different link -->
+        <a href="https://www.example2.com" class="banner-button" target="_blank">
+            <img src="https://m.media-amazon.com/images/I/91RepypuCTL.jpg" alt="Movie Banner 2">
+        </a>
+        <!-- Third Banner with another link -->
+        <a href="https://www.example3.com" class="banner-button" target="_blank">
+            <img src="https://lumiere-a.akamaihd.net/v1/images/p_encanto_homeent_22359_4892ae1c.jpeg" alt="Movie Banner 3">
+        </a>
+        <!-- Fourth Banner (ABB) -->
+        <a href="https://www.example4.com" class="banner-button" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnslWSITFgCxgaiR6OVh-IiTTByTXlu-zcmA&s" alt="Movie Banner 4">
+        </a>
+        <!-- Fifth Banner (ABB) -->
+        <a href="https://www.example5.com" class="banner-button" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/en/a/a8/Tangled_poster.jpg" alt="Movie Banner 5">
+        </a>
+        <!-- Sixth Banner (ABB) -->
+        <a href="https://www.example6.com" class="banner-button" target="_blank">
+            <img src="https://lumiere-a.akamaihd.net/v1/images/p_aladdin1992_20486_174ba005.jpeg" alt="Movie Banner 6">
+        </a>
+        <!-- Seventh Banner (ABB) -->
+        <a href="https://www.example7.com" class="banner-button" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8a0sAMNJbhdIDxtgDIZ5oC0H_QamTCT0muA&s" alt="Movie Banner 7">
+        </a>
+        <!-- Eighth Banner (ABB) -->
+        <a href="https://www.example8.com" class="banner-button" target="_blank">
+            <img src="https://lumiere-a.akamaihd.net/v1/images/p_beautyandthebeast1991_20488_592ec4b5.jpeg" alt="Movie Banner 8">
+        </a>
+        <!-- Ninth Banner (ABB) -->
+        <a href="https://www.example9.com" class="banner-button" target="_blank">
+            <img src="https://i.ebayimg.com/images/g/43sAAOSwiyFgC0t6/s-l1200.jpg" alt="Movie Banner 9">
+        </a>
+        <!-- Tenth Banner (ABB) -->
+        <a href="https://www.example10.com" class="banner-button" target="_blank">
+            <img src="https://m.media-amazon.com/images/I/71lD7Stg9zL._AC_UF894,1000_QL80_.jpg" alt="Movie Banner 10">
+        </a>
+        <!-- Eleventh Banner (ABB) -->
+        <a href="https://www.example11.com" class="banner-button" target="_blank">
+            <img src="https://i.ebayimg.com/images/g/wtUAAOSwtqtk4Ytr/s-l1200.jpg" alt="Movie Banner 11">
+        </a>
+        <!-- Twelfth Banner (ABB) -->
+        <a href="https://www.example12.com" class="banner-button" target="_blank">
+            <img src="https://lumiere-a.akamaihd.net/v1/images/p_insideout2_now_available_disneyplus_d24c051c.jpeg" alt="Movie Banner 12">
+        </a>
+        <!-- Thirteenth Banner (ABB) -->
+        <a href="https://www.example13.com" class="banner-button" target="_blank">
+            <img src="https://lumiere-a.akamaihd.net/v1/images/p_beautyandthebeast_19752_32e65c36.jpeg" alt="Movie Banner 13">
+        </a>
+        <!-- Fourteenth Banner (ABB) -->
+        <a href="https://www.example14.com" class="banner-button" target="_blank">
+            <img src="https://i.ebayimg.com/images/g/7FAAAOSwvK1g6nRo/s-l1200.jpg" alt="Movie Banner 14">
+        </a>
+        <!-- Fifteenth Banner (ABB) -->
+        <a href="https://www.example15.com" class="banner-button" target="_blank">
+            <img src="https://lumiere-a.akamaihd.net/v1/images/elemental-poster-sg_de77ba82.jpeg?region=0%2C0%2C600%2C900" alt="Movie Banner 15">
+        </a>
+        <!-- Sixteenth Banner (ABB) -->
+        <a href="https://www.example16.com" class="banner-button" target="_blank">
+            <img src="https://lumiere-a.akamaihd.net/v1/images/p_frozen_18373_3131259c.jpeg?region=0%2C0%2C540%2C810" alt="Movie Banner 16">
+        </a>
+        <!-- Seventeenth Banner (ABB) -->
+        <a href="https://www.example17.com" class="banner-button" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsqLXpvbHZWyu9foNkSxF-iBjz25uaMDoUlg&s" alt="Movie Banner 17">
+        </a>
+        <!-- Eighteenth Banner (ABB) -->
+        <a href="https://www.example18.com" class="banner-button" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAqp__TMWglosuc8cugGq50-UPsRyf4v7e0Q&s" alt="Movie Banner 18">
+        </a>
+        <!-- Nineteenth Banner (ABB) -->
+        <a href="https://www.example19.com" class="banner-button" target="_blank">
+            <img src="https://m.media-amazon.com/images/M/MV5BNzA2MmIxYWUtOGRiYi00ZTVkLWE4YTQtY2MyN2I5ZmRmOTBjXkEyXkFqcGc@._V1_.jpg" alt="Movie Banner 19">
+        </a>
+        <!-- Twentieth Banner (ABB) -->
+        <a href="https://www.example20.com" class="banner-button" target="_blank">
+            <img src="https://m.media-amazon.com/images/M/MV5BODY2NjExYmUtZTQ4NS00NzM2LWE2NWYtZWY2NGIyOTBmNzI3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Movie Banner 20">
+        </a>
+        <!-- Twenty-first Banner (ABB) -->
+        <a href="https://www.example21.com" class="banner-button" target="_blank">
+            <img src="https://m.media-amazon.com/images/M/MV5BZTA3OWVjOWItNjE1NS00NzZiLWE1MjgtZDZhMWI1ZTlkNzYwXkEyXkFqcGc@._V1_.jpg" alt="Movie Banner 21">
+        </a>
+        <!-- Twenty-second Banner (ABB) -->
+        <a href="https://www.example22.com" class="banner-button" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIwufTTc8Lpv1FfvG62RtDUmUxCWT3EUU1_w&s" alt="Movie Banner 22">
+        </a>
+        <!-- Twenty-third Banner (ABB) -->
+        <a href="https://www.example23.com" class="banner-button" target="_blank">
+            <img src="https://lumiere-a.akamaihd.net/v1/images/p_toystory3_19639_3c584e1f.jpeg?region=0%2C0%2C540%2C810" alt="Movie Banner 23">
+        </a>
+        <!-- Twenty-fourth Banner (ABB) -->
+        <a href="https://www.example24.com" class="banner-button" target="_blank">
+            <img src="https://lumiere-a.akamaihd.net/v1/images/p_toystory4_19639_917ad716.jpeg" alt="Movie Banner 24">
+        </a>
+        <!-- Twenty-fifth Banner (ABB) -->
+        <a href="https://www.example25.com" class="banner-button" target="_blank">
+            <img src="https://lumiere-a.akamaihd.net/v1/images/movie_poster_zootopia_866a1bf2.jpeg" alt="Movie Banner 25">
+        </a>
+        <!-- Twenty-sixth Banner (ABB) -->
+        <a href="https://www.example26.com" class="banner-button" target="_blank">
+            <img src="https://lumiere-a.akamaihd.net/v1/images/p_walle_19753_69f7ff00.jpeg?region=0%2C0%2C540%2C810" alt="Movie Banner 26">
+        </a>
+        <!-- Twenty-seventh Banner (ABB) -->
+        <a href="https://www.example27.com" class="banner-button" target="_blank">
+            <img src="https://lumiere-a.akamaihd.net/v1/images/p_bighero6_19753_20bd6206.jpeg" alt="Movie Banner 27">
+        </a>
+        <!-- Twenty-eighth Banner (ABB) -->
+        <a href="https://www.example28.com" class="banner-button" target="_blank">
+            <img src="https://i.ebayimg.com/images/g/ZoMAAOSwGeBjSI~B/s-l1200.jpg" alt="Movie Banner 28">
+        </a>
+        <!-- Twenty-ninth Banner (ABB) -->
+        <a href="https://www.example29.com" class="banner-button" target="_blank">
+            <img src="https://lumiere-a.akamaihd.net/v1/images/p_monstersinc_19751_55afa07a.jpeg" alt="Movie Banner 29">
+        </a>
+        <!-- Thirtieth Banner (ABB) -->
+        <a href="https://www.example30.com" class="banner-button" target="_blank">
+            <img src="https://lumiere-a.akamaihd.net/v1/images/image_483f40e5.jpeg" alt="Movie Banner 30">
+        </a>
+    </div>
+
+</body>
+</html>
